@@ -1,0 +1,244 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 150px;
+    font-family: Arial, sans-serif;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("gua kelam cave.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 8%;
+    position:fixed;
+    width:100%;
+    top:0;
+
+    background: linear-gradient(to right, #141e30, #243b55);
+border-bottom: 2px solid gold;
+
+    z-index:1000;
+}
+
+/* LOGO */
+.logo{
+    color:gold;
+    font-size:24px;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+
+.logo img{
+    width:120px;
+}
+
+/* NAV */
+nav a{
+    color:rgb(91, 207, 13);
+    text-decoration:none;
+    margin-left:30px;
+    font-size:16px;
+    transition:0.4s;
+}
+
+nav a:hover{
+    color:rgb(22, 19, 2);
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 10%;
+    background:
+    linear-gradient(rgba(56, 3, 3, 0.6),
+    rgba(28, 2, 61, 0.8)),
+    url('images/cave.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+/* HERO TEXT */
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:70px;
+    color:rgb(214, 214, 16);
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+/* BUTTON */
+button{
+    padding:14px 35px;
+    border:none;
+    background:gold;
+    color:black;
+    font-size:16px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* HERO IMAGE */
+.hero-image{
+    width:40%;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:350px;
+    border-radius:20px;
+    border:4px solid gold;
+}
+
+/* ABOUT PAGE */
+.page-content{
+    padding:50px 20px;
+    display:flex;
+    justify-content:center;
+}
+
+/* ABOUT CONTAINER */
+.about-container{
+    max-width:900px;
+    width:100%;
+}
+
+/* PROFILE CARD */
+.profile-card{
+    text-align:center;
+    background:rgb(197, 201, 205);
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom:25px;
+}
+
+.profile-image{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.subtitle{
+    color:gray;
+    font-size:14px;
+}
+
+/* INFO GRID */
+.info-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+}
+
+/* INFO CARDS */
+.info-card{
+    background:rgb(76, 151, 227);
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-5px);
+}
+
+.info-card h3{
+    margin-bottom:10px;
+}
+
+.role-container{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+/* TITLE */
+.role-title{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: gold;
+    text-shadow: 0 0 10px rgba(255,215,0,0.4);
+}
+
+/* MAIN BIG BOX (TOP BOX) */
+.role-card.main{
+    background: linear-gradient(135deg, #1a1a40, #2a2a72);
+    color: rgb(72, 155, 219);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+/* SMALL BOX GRID */
+.role-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* SMALL CARDS */
+.role-card{
+    background: rgb(4, 28, 81);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.role-card:hover{
+    transform: translateY(-8px);
+}
+
+/* GLITTER EFFECT */
+.role-card.main::before{
+    content: "✨ 🪨 ✨";
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    font-size: 18px;
+}
+
+nav a.active{
+    background: rgb(87, 8, 65);
+    color: black;
+    padding: 10px 18px;
+    border-radius: 20px;
+}
